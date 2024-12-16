@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dl1bt7407xsk5"]
+
+[ext_resource type="Shader" path="res://DiscardUnderwater.gdshader" id="1_ifxnc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_43cke"]
+albedo_color = Color(0.630093, 0.424226, 0.248883, 1)
+metallic = 0.58
+metallic_specular = 0.7
+roughness = 0.0
+ao_enabled = true
+
+[resource]
+render_priority = 0
+next_pass = SubResource("StandardMaterial3D_43cke")
+shader = ExtResource("1_ifxnc")
